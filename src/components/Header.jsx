@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 function Header (){
 
     const [click, setClick] = useState(false)
-    const [widht, setWidth] = useState(800)
+    const [widht, setWidth] = useState(799)
     
     function ion() {
         if(handleResize() <= 800){
