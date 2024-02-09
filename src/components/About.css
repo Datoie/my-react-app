@@ -1,0 +1,30 @@
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    padding:10% 20%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.card h2{
+    font-size: 1.2rem;
+}
+
+.card p{
+    font-size: 1rem;
+    opacity: .6;
+    max-width: 400px;
+    line-height: 20px;
+}
+
+@media (max-width: 800px){
+    .about-container{
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+}

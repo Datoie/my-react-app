@@ -1,0 +1,100 @@
+.footer-container{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    background: #061126;
+    padding: 50px;
+    margin-top: -140px;
+    z-index: -1;
+}
+.footer-bottom{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+}
+.heading-container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+.heading-container img{
+    width: 20px;
+}
+.heading-container p {
+    max-width: 450px;
+}
+
+.footer-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-ul li {
+    margin-left: 30px;
+}
+.footer-ul li:nth-child(2){
+    position: relative;
+}
+.footer-ul li:nth-child(2):before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../public/assets/icon-email.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -30px;
+}
+.footer-ul li:last-child{
+    position: relative;
+}
+.footer-ul li:last-child::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url('../public/assets/icon-phone.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -30px;
+}
+ol{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 20px;
+}
+
+.fa-icons{
+    display: flex;
+    gap: 20px;
+}
+.fa-icons i{
+    position: relative;
+}
+.fa-icons i::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    color: red;
+    border-radius: 50%;
+    border:1px solid hsl(0, 0%, 100%);
+    left: -4px;
+    top: -3px;
+}
+@media (max-width: 800px) {
+    .footer-bottom{
+        flex-direction: column;
+        align-items: center;
+    }
+    ol{
+        grid-template-columns: auto;
+        text-align: center;
+    }
+}
+@media (max-width: 500px){
+    .subscribe-input{
+        width: 220px;
+    }
+}
