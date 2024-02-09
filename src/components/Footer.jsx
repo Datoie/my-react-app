@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-
+import locationIcon from '../assets/icon-location.svg'
 function Footer() {
   return (
     <div className='footer-container'>
@@ -9,7 +9,7 @@ function Footer() {
 
       <ul className='footer-ul'>
         <div className="heading-container">
-          <img src="./public/assets/icon-location.svg" alt="location logo" />
+          <img src={locationIcon} alt="location logo" />
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam obcaecati molestiae repellendus. Vitae molestiae consectetur eos reprehenderit iure iste quaerat itaque omnis. Quos non rerum, aliquam corrupti voluptatibus dolores harum?</p>
         </div>
         

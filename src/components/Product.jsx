@@ -1,11 +1,12 @@
 import React from 'react'
 import './Product.css'
+import positiveIcon from'../assets/illustration-stay-productive.png'
 
 function Product() {
   return (
     <div className='product-container'>
         <div className='product-img'>
-            <img src='./public/assets/illustration-stay-productive.png'/>
+            <img src={positiveIcon}/>
         </div>
         <div className='product-heading'>
             <h2>Stay productive, wherever you are</h2>

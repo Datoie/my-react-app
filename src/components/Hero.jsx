@@ -1,12 +1,13 @@
 import React from 'react'
 import './Hero.css'
+import illustration from '../assets/illustration-intro.png'
 
 function Hero() {
   return (
     <div className='hero-contianer'>
       <div className='bg-img'></div>
         <div className='hero-img'>
-            <img src={'./assets/illustration-intro.png'} />
+            <img src={illustration} />
         </div>
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p className='hero-p'>
